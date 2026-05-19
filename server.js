@@ -60,7 +60,7 @@ app.post("/webhook/github", express.raw({ type: "*/*" }), async (req, res) => {
   }
 });
 
-const port = Number(process.env.WEBHOOK_PORT || 9000);
+const port = Number(process.env.WEBHOOK_PORT || 3000);
 app.listen(port, () => {
   console.log(`Webhook listener on http://localhost:${port}/webhook/github`);
 });
